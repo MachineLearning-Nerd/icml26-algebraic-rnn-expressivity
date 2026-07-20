@@ -1,0 +1,13 @@
+{
+  "endpoint": "https://huggingface.co/spaces/ICML-2026-agent-repro/challenge/resolve/main/claims.json",
+  "fetched_on": "2026-07-20",
+  "openreview_id": "7pbmZatDuD",
+  "claims": [
+    "An algebraic framework based on wreath products of transformation semigroups unifies expressivity analysis across RNN language models.",
+    "The framework enables rigorous expressivity analysis under deterministic finite-precision semantics, separating universal algebraic structure from numerical semantics.",
+    "The framework rederives and corrects representative expressivity claims from prior literature on RNNs, LSTMs, and SSMs."
+  ],
+  "claim_count": 3,
+  "points_possible": 6,
+  "status_at_fetch": "unverified"
+}

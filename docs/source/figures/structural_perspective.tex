@@ -1,0 +1,118 @@
+\begin{figure}[h!]
+    \centering
+    \resizebox{0.5\textwidth}{!}{
+    \begin{tikzpicture}[
+        % GLOBAL STYLES
+        font=\small,
+        node distance=1.5cm and 3cm, % Vertical and Horizontal spacing
+        >=Stealth, % Arrow tip style
+        thick,
+        % NODE STYLES
+        idealbox/.style={
+            rectangle, 
+            draw=blue!30!white, 
+            fill=blue!5!white, 
+            rounded corners, 
+            text width=5.2cm, 
+            align=center, 
+            inner sep=10pt, 
+            drop shadow
+        },
+        realbox/.style={
+            rectangle, 
+            draw=red!30!white, 
+            fill=red!5!white, 
+            rounded corners, 
+            text width=5.2cm, 
+            align=center, 
+            inner sep=10pt, 
+            drop shadow
+        },
+        corebox/.style={
+            rectangle, 
+            draw=black!60, 
+            fill=yellow!10!white, 
+            rounded corners=2pt, 
+            double, 
+            text width=5.2cm, 
+            align=center, 
+            inner sep=10pt, 
+            drop shadow
+        },
+        plaintext/.style={
+            text width=5.2cm, 
+            align=center, 
+            font=\itshape, 
+            color=black!70
+        },
+        flowbox/.style={
+            rectangle,
+            draw=black!30,
+            fill=black!2,
+            rounded corners,
+            text width=5.2cm,
+            align=center,
+            inner sep=10pt,
+            drop shadow
+        },
+        % ARROW STYLES
+        bluearrow/.style={->, double, draw=blue!70!black, double distance=1pt},
+        redarrow/.style={->, ultra thick, draw=red!70!black}
+    ]
+
+    %% --- NODES ---
+
+    % Top Left: The Platonic Ideal
+    \node[idealbox] (IDEAL) {
+        \textbf{\textcolor{blue!70!black}{The Platonic Ideal}}\\
+        $\realrnn$\\
+        \footnotesize (Continuous Arithmetic)
+    };
+
+    % Top Right: Continuous Trajectories
+    % \node[plaintext, right=of IDEAL] (CONTINUOUS) {
+    %     Continuous Trajectories on $\mathbb{R}^N$
+    % };
+    \node[flowbox, right=of IDEAL] (CONTINUOUS) {%
+  Continuous Trajectories on $\R^\hiddim$\\\phantom{A}\\
+  \tikz{
+    \draw[black!50, line cap=round, smooth, samples=120]
+      plot[domain=0:3.6] (\x,{1.2mm*sin(2.4*\x r)});
+  }
+};
+
+    % Bottom Left: The Digital Reality
+    \node[realbox, below=of IDEAL] (REAL) {
+        \textbf{\textcolor{red!70!black}{The Digital Reality}}\\
+         $\finrnn$\\
+        \footnotesize (Discrete States)
+    };
+
+    % Bottom Right: The Algebraic Core (aligned with REAL)
+    \node[corebox, right=of REAL] (CORE) {
+        \textbf{The Algebraic Form}\\
+        \footnotesize Behavior goverened by \\
+        \large $\rnnsemigroup \leq \layerwreath$
+    };
+
+    %% --- ARROWS ---
+
+    % Arrow 1: Ideal -> Continuous
+    \draw[->, blue!70!black] (IDEAL) -- node[above, font=\small, align=center] {Theoretical\\Dynamics} (CONTINUOUS);
+
+    % Arrow 2: Ideal -> Real (The Functor)
+    \draw[bluearrow] (IDEAL) -- node[right, text width=3cm, align=left, font=\small, color=blue!70!black] {$\functor$ (Discretization)} (REAL);
+
+    % Arrow 3: Continuous -> Core (Collapse)
+    \draw[->, dashed, color=black!50]
+    (CONTINUOUS.south) -- node[right, text width=3.5cm, align=left, font=\footnotesize]
+    {Structural Collapse\\(Calculus fails)}
+    (CONTINUOUS.south |- CORE.north);
+
+    % Arrow 4: Real -> Core (Realization)
+    \draw[redarrow] (REAL) -- node[above, font=\small, color=red!70!black, align=center] {Algebraic\\Realization} (CORE);
+    \end{tikzpicture}
+    }
+    \caption{A structural perspective: from continuous idealizations (top) to algebraic structures (bottom).\looseness=-1}
+    \label{fig:categorical}
+\end{figure}

@@ -1,0 +1,30 @@
+{
+  "artifacts": {
+    ".trackio/logbook/logbook.json": "fb7c269ca4b396603233288ae00dd5798a485aea49593adb9104ba4932c09c6a",
+    ".trackio/metadata.json": "32f222a81aca087deacac021992140c6ce277c55a4ef9e6f4dfbaa4d4a9a114d",
+    "README.md": "edf84fd9a4b4ffb23a3d69d2422709dac2b2737c3ddae82815a73c4641df39f7",
+    "STATUS.md": "93cc434c5bac62086eac05fd3f728770f70a808925681d16839cb9b57968f9a3",
+    "docs/arxiv_source.tar": "0c2c76a4c00dd05344ed167f19cda265918edb47112a95884c7f9c55bb985790",
+    "docs/live_claims_2026-07-20.json": "a11167e388da41b46da6c9d2043b528535eee90e81ab5e9b3d487599fc2afa46",
+    "docs/primary.pdf": "2437886679ac4c76b60d008dce1da217abe7a96bbdac77298660c2e82832071e",
+    "docs/source/main.tex": "705d5e48e81819fd802fe12f0c3b54d8769bd0ec0cf5becf7f274096ba63dd6c",
+    "docs/source_pins.json": "ec3e5acadf17ba324faf5458b5590fdcf696a8cd74a505fc0aab4e0378924bc6",
+    "outputs/audit.json": "fb330bd0590db28677b4acd8745239c3358f3ad9af1f333d2e54fd7da640ac9a",
+    "outputs/claim_verification.json": "26a13d656f796547bae3254fe5654509f70d9a215f89f72ea4a99357b947ffd7",
+    "outputs/test_results.json": "a36a83b485c2f06ce823430469b77d4f0ba409cac73adf68232b1c9f98b5994b",
+    "repro/src/build_evidence_bundle.py": "ced2815d653bfea598821b87342203824094452ac12f86bdcee39f5948d3bc2d",
+    "repro/src/full_audit.py": "6159811b6219689b12718782f19a5f6af552214cfceb21c6fe722ec603471960",
+    "repro/src/run_tests.py": "81e3953584ac8a747a620069094fde4aa0399d7d27b7f764ad0ecabf669694cd",
+    "repro/src/verify_claims.py": "5b1748e2ec1b1cb11a5d17493e5f07b0719321959343988c1d17e879a3f1db43",
+    "repro/tests/test_full_audit.py": "e102b1361e763a8652469f7f8501f49dd73b8490e118d5fba8cf6fc09188ea65"
+  },
+  "claim_outcomes": {
+    "C1": "verified_realized_wreath_factorization",
+    "C2": "verified_fixed_semantics_aperiodicity_controls",
+    "C3": "verified_unsigned_parity_correction"
+  },
+  "earned_points": 6,
+  "gate": "FULL_GATE_READY",
+  "live_claim_count": 3,
+  "paper": "7pbmZatDuD"
+}

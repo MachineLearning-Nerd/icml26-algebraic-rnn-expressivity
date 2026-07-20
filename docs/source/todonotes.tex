@@ -1,0 +1,20 @@
+\setlength{\marginparwidth}{1.6cm}
+\definecolor{mintgreen}{RGB}{152, 255, 152}
+\makeatletter
+\newcommand*\iftodonotes{\if@todonotes@disabled\expandafter\@secondoftwo\else\expandafter\@firstoftwo\fi}  %
+\makeatother
+\newcommand{\noindentaftertodo}{\iftodonotes{\noindent}{}}
+\newcommand{\fixme}[2][]{\todo[color=yellow,size=\scriptsize,fancyline,caption={},#1]{#2}}
+\newcommand{\note}[4][]{\todo[author=#2,color=#3,size=\scriptsize,fancyline,caption={},#1]{#4}} % default note settings, used by macros below.
+
+\newcommand{\cts}{\note{Citations}{AccentOrange!80}{Add citations}\xspace}
+
+\newcommand{\franz}[2][]{\note[#1]{Franz}{orange!40}{#2}}
+\newcommand{\Franz}[2][]{\franz[inline,#1]{#2}\noindentaftertodo}
+\newcommand{\reda}[2][]{\note[#1]{reda}{yellow!40}{#2}}
+\newcommand{\Reda}[2][]{\reda[inline,#1]{#2}\noindentaftertodo}
+\newcommand{\ryan}[2][]{\note[#1]{ryan}{purple!40}{#2}}
+\newcommand{\Ryan}[2][]{\ryan[inline,#1]{#2}\noindentaftertodo}
+
+% Insert \response{myname} within someone else's todonote.
+\newcommand{\response}[1]{\vspace{3pt}\hrule\vspace{3pt}\textbf{#1:}}

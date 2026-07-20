@@ -1,0 +1,91 @@
+{
+  "claims": {
+    "C1": {
+      "ambient_lower_monoid_size": 4,
+      "ambient_reset_rejected_as_unrealized": true,
+      "factorization_exact_for_each_token": true,
+      "realized_transition_monoid_size": 8,
+      "result": "verified",
+      "scope": "finite two-layer deterministic recurrence; a witness for the source framework, not a survey claim about all RNNs",
+      "state_count": 4
+    },
+    "C2": {
+      "all_enumerated_nonnegative_monoids_aperiodic": true,
+      "all_nonnegative_updates_monotone": true,
+      "finite_ordered_models": [
+        {
+          "aperiodicity_exponent": 2,
+          "domain": [
+            -1,
+            0,
+            1
+          ],
+          "monoid_size": 10
+        },
+        {
+          "aperiodicity_exponent": 4,
+          "domain": [
+            -2,
+            -1,
+            0,
+            1,
+            2
+          ],
+          "monoid_size": 82
+        },
+        {
+          "aperiodicity_exponent": 6,
+          "domain": [
+            -3,
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3
+          ],
+          "monoid_size": 377
+        }
+      ],
+      "float32_associativity_control": {
+        "(a+b)+c": 0.0,
+        "a+(b+c)": 1.0,
+        "fixed_evaluation_order_required": true
+      },
+      "result": "verified",
+      "scope": "finite deterministic semantics with NaNs excluded and a fixed recurrence-consistent order",
+      "signed_multiplier_control_rejected": true
+    },
+    "C3": {
+      "C3_boundary_control": "the explicit construction has order 2 only; no claim that it implements mod-3",
+      "contains_C2": true,
+      "floating_nonnegative_aperiodicity_conflicts_with_C2": true,
+      "nonnegative_recurrence": {
+        "A": 1,
+        "B(0)": 0,
+        "B(1)": 8
+      },
+      "parity_words_exhaustively_checked_through_length": 10,
+      "result": "verified",
+      "scope": "same nonnegative diagonal recurrence under 4-bit unsigned wraparound versus fixed floating-point semantics",
+      "transition_monoid_size": 2,
+      "unsigned_wraparound_bits": 4,
+      "word_count": 2047
+    }
+  },
+  "outcome": "3/3 live claims independently reproduced within their stated scope",
+  "paper": "7pbmZatDuD",
+  "source_audit": {
+    "anchors": [
+      "wreath definition",
+      "realized/ambient distinction",
+      "recurrence consistency",
+      "floating nonnegative theorem",
+      "parity impossibility",
+      "unsigned construction",
+      "prior-claim correction"
+    ],
+    "author_executables": []
+  },
+  "title": "An Algebraic View of the Expressivity of Recurrent Language Models"
+}

@@ -1,0 +1,6 @@
+{
+  "tests_passed": true,
+  "returncode": 0,
+  "stdout": "",
+  "stderr": "test_complete_audit_is_reproducible (test_full_audit.FullAuditTest.test_complete_audit_is_reproducible) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.208s\n\nOK\n"
+}

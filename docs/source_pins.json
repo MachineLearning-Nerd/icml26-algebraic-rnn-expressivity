@@ -1,0 +1,9 @@
+{
+  "openreview_id": "7pbmZatDuD",
+  "arxiv_id": "2606.01765",
+  "arxiv_source_sha256": "0c2c76a4c00dd05344ed167f19cda265918edb47112a95884c7f9c55bb985790",
+  "primary_pdf_sha256": "2437886679ac4c76b60d008dce1da217abe7a96bbdac77298660c2e82832071e",
+  "primary_tex_sha256": "705d5e48e81819fd802fe12f0c3b54d8769bd0ec0cf5becf7f274096ba63dd6c",
+  "official_code": null,
+  "implementation_scope": "independent finite transformation-monoid and arithmetic-semantics audit"
+}

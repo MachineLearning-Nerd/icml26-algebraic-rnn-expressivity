@@ -1,0 +1,15 @@
+{
+  "paper": "7pbmZatDuD",
+  "source_pinned": true,
+  "live_contract_pinned": true,
+  "live_claim_count": 3,
+  "claim_1_wreath_framework": true,
+  "claim_2_deterministic_finite_precision": true,
+  "claim_3_rederivation_and_correction": true,
+  "decisive_claims": 3,
+  "earned_points": 6,
+  "all_claims_complete": true,
+  "tests_passed": true,
+  "publication_gate_passed": true,
+  "scope": "C1 is an exact finite witness. C2 keeps NaNs excluded, nonnegative multipliers and recurrence-consistent order. C3 is precisely a 4-bit unsigned-wraparound parity correction, contrasted with the fixed-floating-point aperiodicity theorem."
+}

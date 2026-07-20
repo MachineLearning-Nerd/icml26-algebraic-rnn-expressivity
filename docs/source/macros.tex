@@ -1,0 +1,392 @@
+% --- Equation Numbering Format ---
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+
+% --- Section Customization ---
+\crefname{section}{Section}{Sections}
+\Crefname{section}{Section}{Sections} 
+
+% --- Appendix Customization ---
+\crefname{appendix}{Appendix}{Appendices}
+\Crefname{appendix}{Appendix}{Appendices}
+\crefformat{appendix}{Appendix~#2#1#3}
+\Crefformat{appendix}{Appendix~#2#1#3}
+\crefrangeformat{appendix}{Appendices~#3#1#4\textendash#5#2#6}
+\Crefrangeformat{appendix}{Appendices~#3#1#4\textendash#5#2#6}
+
+% --- Tables and Figures (ICML standard abbreviations mid-sentence) ---
+\crefname{table}{Table}{Tables}
+\Crefname{table}{Table}{Tables}
+\crefname{figure}{Fig.}{Figs.}
+\Crefname{figure}{Figure}{Figures}
+
+% --- Math Environments & Logic ---
+\crefname{algorithm}{Algorithm}{Algorithms}
+\Crefname{algorithm}{Algorithm}{Algorithms}
+
+% Equations (ICML standard abbreviation mid-sentence)
+\crefname{equation}{Eq.}{Eqs.}
+\Crefname{equation}{Equation}{Equations}
+\creflabelformat{equation}{#2#1#3} % Strips the default parentheses if desired
+
+\crefname{theorem}{Theorem}{Theorems}
+\Crefname{theorem}{Theorem}{Theorems}
+\crefname{lemma}{Lemma}{Lemmas}
+\Crefname{lemma}{Lemma}{Lemmas}
+\crefname{corollary}{Corollary}{Corollaries}
+\Crefname{corollary}{Corollary}{Corollaries}
+\crefname{proposition}{Proposition}{Propositions}
+\Crefname{proposition}{Proposition}{Propositions}
+\crefname{definition}{Definition}{Definitions}
+\Crefname{definition}{Definition}{Definitions}
+\crefname{claim}{Claim}{Claims}
+\Crefname{claim}{Claim}{Claims}
+\crefname{example}{Example}{Examples}
+\Crefname{example}{Example}{Examples}
+\crefname{fact}{Fact}{Facts}
+\Crefname{fact}{Fact}{Facts}
+\crefname{question}{Question}{Questions}
+\Crefname{question}{Question}{Questions}
+\crefname{conjecture}{Conjecture}{Conjectures}
+\Crefname{conjecture}{Conjecture}{Conjectures}
+\crefname{remark}{Remark}{Remarks}
+\Crefname{remark}{Remark}{Remarks}
+
+% --- Custom Requirements List ---
+\newlist{requirements}{enumerate}{1}
+\setlist[requirements]{
+    label=\arabic*., 
+    ref=\arabic*,
+}
+
+% \renewcommand{\theequation}{\thesection.\arabic{equation}}
+% \crefname{section}{\S}{\S\S}
+% \crefname{appendix}{appendix}{appendices}
+% \Crefname{appendix}{Appendix}{Appendices}
+% \crefname{table}{table}{}
+% \Crefname{table}{Table}{}
+% \crefname{figure}{figure}{}
+% \Crefname{figure}{Figure}{}
+% \crefname{algorithm}{algorithm}{}
+% \crefname{equation}{equation}{}
+% \Crefname{equation}{Equation}{}
+% \creflabelformat{equation}{#2#1#3}
+% \crefname{theorem}{theorem}{}
+% \Crefname{theorem}{Theorem}{}
+% \crefname{lemma}{lemma}{}
+% \Crefname{lemma}{Lemma}{}
+% \crefname{corollary}{corollary}{}
+% \Crefname{corollary}{Corollary}{}
+% \crefname{proposition}{proposition}{}
+% \Crefname{proposition}{Proposition}{}
+% \crefname{definition}{definition}{}
+% \Crefname{definition}{Definition}{}
+% \crefname{claim}{claim}{}
+% \Crefname{claim}{Claim}{}
+% \crefname{example}{example}{}
+% \Crefname{example}{Example}{}
+% \crefname{fact}{fact}{}
+% \Crefname{fact}{Fact}{}
+% \crefname{question}{question}{}
+% \Crefname{question}{Question}{}
+% \crefname{conjecture}{conjecture}{}
+% \Crefname{conjecture}{Conjecture}{}
+% \crefname{remark}{remark}{}
+% \Crefname{remark}{Remark}{}
+% \crefname{myreq}{requirement}{requirements}
+% \Crefname{myreq}{Requirement}{Requirements}
+% \newlist{requirements}{enumerate}{1}
+% \setlist[requirements]{
+%     label=\arabic*., 
+%     ref=\arabic*,
+% }
+% \crefalias{requirementsi}{myreq}
+
+% \crefname{table}{Tab.}{}
+% \crefname{figure}{Fig.}{}
+% \crefname{algorithm}{Alg.}{}
+% \crefname{equation}{Eq.}{}
+% \creflabelformat{equation}{#2#1#3}
+% \crefname{appendix}{App.}{}
+% \crefname{theorem}{Thm.}{}
+% \crefname{lemma}{Lem.}{}
+% \crefname{corollary}{Cor.}{}
+% \crefname{proposition}{Prop.}{}
+% \crefname{definition}{Def.}{}
+% \crefname{claim}{Claim}{}
+% \crefname{example}{Ex.}{}
+% \crefname{fact}{Fact}{}
+% \crefname{question}{Quest.}{}
+% \crefname{conjecture}{Conj.}{}
+% \crefname{remark}{Rem.}{}
+
+%% THEOREM ENVIRONMENTS
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{condition}[theorem]{Condition}
+
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+
+% Number systems
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+
+% Citations
+\makeatletter
+\newcommand{\citeposs}[1]{%
+  \citeauthor{#1}'s\ (\citeyear{#1})%
+}
+\makeatother
+
+% Definitional equality and bold-defined terms
+\newcommand{\defn}[1]{\textbf{#1}}
+\newcommand{\defeq}{\mathrel{\stackrel{\textnormal{\tiny def}}{=}}}
+
+% Identity, kernel, image, sign
+\newcommand{\id}{\mathrm{Id}}
+\newcommand{\sgn}{\mathrm{sign}}
+\renewcommand{\ker}{\mathop{\mathrm{Ker}}}
+\newcommand{\im}{\mathop{\mathrm{Im}}}
+\newcommand{\ord}{\mathop{\text{ord}}}
+\newcommand{\rank}{\mathop{\text{rank}}}
+\newcommand{\Tr}{\mathop{\text{Tr}}}
+\newcommand{\argmin}{\mathop{\text{argmin}}}
+\newcommand{\argmax}{\mathop{\text{argmax}}}
+\newcommand{\bigo}[1]{\mathcal{O}\left(#1\right)}
+
+% Norms, inner products, expectation
+\newcommand{\norm}[1]{||#1||}
+\newcommand{\innerprod}[1]{\langle{#1}\rangle}
+\newcommand{\E}{\mathop{\mathbb{E}}}
+
+% Subgroup, normal subgroup, divisibility (number-theoretic)
+\newcommand{\ug}{\leq}
+\newcommand{\normal}{\trianglelefteq}
+\newcommand{\teilt}{\big{|}}
+\newcommand{\zykl}[1]{{<}{#1}{>}}
+\newcommand{\ggt}{\mathop{\text{ggT}}}
+\newcommand{\iso}{\simeq}
+\newcommand{\isom}{\mathop{\text{Isom}}}
+\newcommand{\aut}{\mathop{\text{Aut}}}
+\newcommand{\stab}{\mathop{\text{Stab}}}
+\newcommand{\operateson}{\curvearrowright}
+\newcommand{\mat}{\mathrm{Mat}}
+\newcommand{\trans}{\mathcal{T}}
+
+% Bold letters
+\newcommand{\mA}{\mathbf{A}}
+\newcommand{\mB}{\mathbf{B}}
+\newcommand{\mC}{\mathbf{C}}
+\newcommand{\mD}{\mathbf{D}}
+\newcommand{\mlow}{\mathbf{M}^{\text{low}}}
+\newcommand{\vu}{\boldsymbol{u}}
+\newcommand{\vv}{\boldsymbol{v}}
+\newcommand{\vx}{\boldsymbol{x}}
+
+% Miscellaneous 
+\newcommand{\rv}[1]{\underline{\underline{#1}}}
+\newcommand{\noise}{\boldsymbol{w}}
+\newcommand{\noiset}{\boldsymbol{\tilde{w}}}
+\newcommand{\betahat}{\boldsymbol{\hat\beta}}
+\newcommand{\xmax}{\tilde{x}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\Aff}{\mathop{\mathrm{Aff}}}
+\newcommand{\I}{\text{I}}
+
+
+%% ALPHABETS, WORDS, LANGUAGES
+\newcommand{\alphabet}{\Sigma}
+\newcommand{\eosalphabet}{\overline{\alphabet}}
+\newcommand{\kleene}[1]{{#1}^{\ast}}
+\newcommand{\sym}{\sigma}
+\newcommand{\str}{w}
+\newcommand{\lang}{\mathcal{L}}
+\newcommand{\emptyword}{\varepsilon}
+\newcommand{\charfun}[1]{\chi_{#1}}
+
+
+%% MONOIDS AND TRANSFORMATION MONOIDS
+% Generic monoid and semigroup
+\newcommand{\monoid}{M}
+\newcommand{\semigroup}{S}
+
+% Transition monoid of a transducer / core / RNN
+\newcommand{\transmon}{T}
+
+% Underlying monoid of a wreath product, and its transformation-monoid form
+\newcommand{\wreathmon}{W}
+\newcommand{\wreath}{\mathbb{W}}
+
+% Identity element of a monoid
+\newcommand{\identity}[1]{\mathrm{id}_{#1}}
+
+% Submonoid relation (subobject in the category of transformation monoids)
+\newcommand{\submon}{\leq}
+
+% Division of monoids
+\newcommand{\divides}{\prec}
+
+% Syntactic monoid and congruence
+\newcommand{\synmon}[1]{M(#1)}
+\newcommand{\syncong}[1]{\sim_{#1}}
+
+% Generated monoid / semigroup
+\newcommand{\genmon}[1]{\bigl\langle #1 \bigr\rangle_{\mathrm{mon}}}
+\newcommand{\gensemi}[1]{\bigl\langle #1 \bigr\rangle_{\mathrm{sg}}}
+
+% Wreath-product closure of a class
+\newcommand{\wrclos}[1]{\langle #1 \rangle_{\wr}}
+
+
+%% PSEUDOVARIETIES AND GREEN RELATIONS
+\newcommand{\pseudovariety}[1]{\mathbf{#1}}
+\newcommand{\Aperiodic}{\pseudovariety{Ap}}
+\newcommand{\Rtrivial}{\pseudovariety{R}}
+\newcommand{\Definite}{\pseudovariety{Def}}
+\newcommand{\LocallyR}{\pseudovariety{LR}}
+
+\newcommand{\Rrel}{\mathcal{R}}
+\newcommand{\Lrel}{\mathcal{L}}
+\newcommand{\Hrel}{\mathcal{H}}
+\newcommand{\Jrel}{\mathcal{J}}
+
+% Cyclic group of order n
+\newcommand{\cyclic}[1]{\Z/{#1}\Z}
+
+
+%% TRANSDUCERS
+\newcommand{\transducer}{\mathcal{T}}
+
+% Extended transition and output functions (word-level)
+\newcommand{\extdelta}{\widehat{\delta}}
+\newcommand{\extgamma}{\widehat{\gamma}}
+
+
+%% RNNS, CORES, ACCEPTORS
+% Top-level objects
+\newcommand{\rnn}{\mathcal{R}}
+\newcommand{\core}{\mathfrak{c}}
+\newcommand{\acceptor}{\mathcal{A}}
+\newcommand{\augrnn}{{\rnn^{+}}}
+\newcommand{\acccore}{{\core_{\bullet}}}
+\newcommand{\inicore}{{\core_{\circ}}}
+\newcommand{\trivcore}{\core_{\mathrm{triv}}}
+
+% Cascade juxtaposition of an algebraic RNN with a core, parameterized by an admissible wiring map.
+\newcommand{\cascadewith}[1]{\mathbin{\rhd_{#1}}}
+\newcommand{\rnntype}[1]{\mathrm{type}(#1)}
+\newcommand{\insettype}{\mathrm{In}}
+\newcommand{\outsettype}{\mathrm{Out}}
+\newcommand{\Algrnn}{\mathbf{AlgRNN}}
+
+% Input / output / state sets of a core
+\newcommand{\inset}{X}
+\newcommand{\insym}{x}
+\newcommand{\inseq}{\mathbf{x}}
+\newcommand{\outset}{Y}
+\newcommand{\outsym}{y}
+\newcommand{\outseq}{\mathbf{y}}
+\newcommand{\states}{Q}
+\newcommand{\state}{q}
+
+% Aliases for hidden-state notation in the analytic RNN section
+\newcommand{\hidsym}{\state}
+\newcommand{\hidset}{\states}
+
+% Core transition and readout functions
+\newcommand{\recfn}{f}
+\newcommand{\outfn}{g}
+
+% Layers
+\newcommand{\nlayers}{N}
+\newcommand{\layer}{n}
+
+% Core tuples
+\newcommand{\coretuple}{(\states, \inset, \outset, \recfn, \outfn)}
+\newcommand{\corelayertuple}{(\states_\layer, \inset_\layer, \outset_\layer, \recfn_\layer, \outfn_\layer)}
+
+% Wiring map
+\newcommand{\wiremap}{\tau}
+
+% Encoder, decoder
+\newcommand{\enc}{e}
+\newcommand{\dec}{d}
+\newcommand{\din}{{\dseq_\textit{in}}}
+\newcommand{\dout}{{\dseq_\textit{out}}}
+\newcommand{\encletter}{e_0}
+\newcommand{\encword}{\widetilde{e}}
+
+% Initial state and accepting region
+\newcommand{\initstate}{\state^{\circ}}
+\newcommand{\accreg}{F}
+
+% Extension of the RNN global transition to words
+\newcommand{\extF}[1]{\widehat{F}_{#1}}
+\newcommand{\extG}[1]{\widehat{G}_{#1}}
+
+% Projection onto a specific layer's state coordinate
+\newcommand{\projlayer}[1]{\pi_{#1}}
+
+% Language recognized by an acceptor
+\newcommand{\Lang}[1]{\lang(#1)}
+
+% Induced monoid morphism from alphabet^* to a transition monoid
+\newcommand{\Phimon}{\Phi}
+
+
+%% DIMENSIONS, SEQUENCE INDICES
+\newcommand{\hiddim}{m}
+\newcommand{\seqdim}{d}
+\newcommand{\seqlen}{T}
+\newcommand{\tstep}{t}
+\newcommand{\seqfn}{N}
+
+
+%% ARITHMETIC MODELS AND DISCRETIZATION
+\newcommand{\arith}{\mathfrak{M}}
+\newcommand{\domain}{\mathcal{D}}
+\newcommand{\ops}{\mathcal{O}}
+\newcommand{\round}{\square}
+\newcommand{\schedule}{\sigma}
+\newcommand{\wrap}{\tikz{\node[circle,inner sep=0,outer sep=0,draw]{$\phantom{o}$}}}
+
+\newcommand{\fp}{\textsc{fp}}
+\newcommand{\integ}{\textsc{int}}
+
+\newcommand{\tree}{\mathcal{T}}
+\newcommand{\Trees}{\mathbf{Tree}}
+
+% Aperiodic shorthand used in SSM case study
+\newcommand{\aperiodic}{\Aperiodic}
+
+% Language: count modulo
+\newcommand{\countl}{\textsc{ModCount}}
+
+% Architectural shorthands (RMSnorm, ReLU, Diag)
+\newcommand{\rmsnorm}{\mathrm{norm}}
+\newcommand{\rms}{\mathrm{RMS}}
+\newcommand{\relu}{\mathrm{ReLU}}
+\newcommand{\diag}{\mathrm{Diag}}
+
+
+%% CATEGORICAL PERSPECTIVE
+\newcommand{\realrnn}{\R\text{-}\mathbf{RNN}}
+\newcommand{\finrnn}{\mathbf{Fin}\text{-}\mathbf{RNN}}
+\newcommand{\functor}{\mathcal{F}}
+\newcommand{\rnnsemigroup}{(\monoid_\rnn,\states_\rnn)}
+\newcommand{\layerwreath}{(\wreathmon_\rnn,\states_\rnn)}
+\newcommand{\FlipFlop}{\textsc{FF}}
