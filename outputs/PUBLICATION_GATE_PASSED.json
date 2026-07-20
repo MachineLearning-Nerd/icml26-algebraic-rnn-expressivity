@@ -2,7 +2,7 @@
   "gate": "FULL_GATE_READY",
   "queue_marker": "FULL_GATE_READY: 7pbmZatDuD",
   "paper": "7pbmZatDuD",
-  "evidence_bundle_sha256": "e38d8bc6c02f2ef336a3c10296afd483e6081dab6adbe87a16d835b23acbd6da",
+  "evidence_bundle_sha256": "58ecdc73563c380c4c46c150783f87ae1a69e173dc888d6f9af49ae25772214f",
   "claim_verification_sha256": "26a13d656f796547bae3254fe5654509f70d9a215f89f72ea4a99357b947ffd7",
   "claims_complete": true,
   "earned_points": 6,

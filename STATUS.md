@@ -15,6 +15,8 @@ bundle is hash-addressed. Trackio logbook pages are recorded locally.
 
 ## Next action
 
-Perform the public GitHub handoff, then atomically enqueue this complete 6-point
-paper through the shared backlog drain. Do not create a Hugging Face Space from
-this paper session.
+Public GitHub handoff commit `584f8ff` was pushed to
+`MachineLearning-Nerd/icml26-repro-7pbmZatDuD-algebraic-rnn-expressivity` and
+read back as public. The atomic shared backlog handoff succeeded as entry 72.
+The shared drain, not this paper session, owns creation and verification of the
+eventual Hugging Face Space.
