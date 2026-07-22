@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "title": "Repro - An Algebraic View of RNN Expressivity",
+  "emoji": "🎯",
+  "space_id": "DineshAI/7pbmZatDuD",
+  "paper": {
+    "arxiv_id": "2606.01765"
+  },
+  "tags": [
+    "icml2026-repro",
+    "paper-7pbmZatDuD"
+  ],
+  "updated_at": "2026-07-22T12:58:53+00:00",
+  "root": {
+    "slug": "index",
+    "title": "Repro - An Algebraic View of RNN Expressivity",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "methods",
+        "title": "Methods",
+        "file": "pages/methods/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-1",
+        "title": "Claim 1",
+        "file": "pages/claim-1/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-2",
+        "title": "Claim 2",
+        "file": "pages/claim-2/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-3",
+        "title": "Claim 3",
+        "file": "pages/claim-3/page.md",
+        "children": []
+      },
+      {
+        "slug": "negative-controls",
+        "title": "Negative controls",
+        "file": "pages/negative-controls/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Conclusion",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      },
+      {
+        "slug": "claim-2-proposition-3-20-exact",
+        "title": "Claim 2 — Proposition 3.20 exact cascade certificate",
+        "file": "pages/claim-2-proposition-3-20-exact/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 1214,
+  "revision": "1784725133221828912"
+}
