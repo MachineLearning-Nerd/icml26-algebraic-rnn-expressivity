@@ -8,7 +8,7 @@
   "claims_blocked": 0,
   "claims_falsified": 0,
   "claims_verified_scoped": 3,
-  "evidence_bundle_sha256": "b3b6dfa1b013902f48089764f1dd5540fe4a1b08249ea78dad9b6e5393f9bb2c",
+  "evidence_bundle_sha256": "3d5b502fc0822ae9cc64aba76a3bcc8e331a975e2ded45a6b0b0b1de991222b8",
   "evidence_release_gate": "PASSED",
   "overall_status": "VERIFIED_SCOPED",
   "paper": {

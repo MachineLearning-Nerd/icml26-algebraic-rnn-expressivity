@@ -19,7 +19,7 @@
     "outputs/README.md": "ec5a46986b0e7283ac8ad97fccd8d2a16b66b47117d31463ba91828d164a2d4c",
     "outputs/audit.json": "fb330bd0590db28677b4acd8745239c3358f3ad9af1f333d2e54fd7da640ac9a",
     "outputs/claim_verification.json": "26a13d656f796547bae3254fe5654509f70d9a215f89f72ea4a99357b947ffd7",
-    "outputs/test_results.json": "0a5dcce1cb1ce0549efb4842651bf0a03111a5b47a9ebcccfd2946d3fcf01ad1",
+    "outputs/test_results.json": "6e7c0731b461b798ec87401917dc73c17b5c0c7b5512eea20f7627685acbb647",
     "repro/src/build_evidence_bundle.py": "75f868d4a083fa289809fb731a0175c13a683f7e90bf002680456ed029baec68",
     "repro/src/full_audit.py": "6159811b6219689b12718782f19a5f6af552214cfceb21c6fe722ec603471960",
     "repro/src/run_tests.py": "81e3953584ac8a747a620069094fde4aa0399d7d27b7f764ad0ecabf669694cd",
