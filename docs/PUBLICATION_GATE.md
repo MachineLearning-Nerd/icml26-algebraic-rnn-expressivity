@@ -12,6 +12,6 @@ The evidence-release gate is **PASSED** with `6/6` declared points. The overall 
 | Source integrity | Archive, PDF, primary TeX, and source anchors | pass |
 | Reproducibility | Dependency-free test and fail-closed claim verifier | pass |
 | Provenance disclosure | No author executable; clean-room boundary and finite scope visible | pass |
-| Public handoff | Final repository metadata, branch, and attribution readback | pending final publication step |
+| Public handoff | Final repository metadata, branch, and attribution readback | pass |
 
 No training proxy, hidden benchmark score, or unrestricted theorem claim is substituted for the declared evidence.
